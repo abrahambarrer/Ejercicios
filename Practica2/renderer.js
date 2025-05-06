@@ -1,6 +1,8 @@
 const setButton = document.getElementById('btn')
-const titleInput = document.getElementById('title')
+const messageInput = document.getElementById('messageInput')
+const paragraph = document.getElementById('message')
 setButton.addEventListener('click', () => {
-  const title = titleInput.value
-  window.electronAPI.setTitle(title)
+  const message = messageInput.value
+  paragraph.textContent = `Mensaje: ${message}`
+  window.electronAPI.sendMessage(message)
 })

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Renderer!</title>
+    <title>Práctica 2</title>
   </head>
   <body>
-    Title: <input id="title"/>
-    <button id="btn" type="button">Set</button>
+    <h1>Práctica 2</h1>
+    <p>El presente ejercicio comunica los procesos Main y Renderer, al utilizar ipcMain e ipcRenderer para enviar datos entre procesos: Renderer envía un mensaje a Main cuando se pulsa un botón. Main responde con un mensaje que se muestra en la interfaz de usuario.</p>
+    Mensaje: <input id="messageInput"/>
+    <button id="btn" type="button">Enviar Mensaje</button>
+    <p id="message"></p>
     <script src="./renderer.js"></script>
   </body>
 </html>

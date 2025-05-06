@@ -1,0 +1,23 @@
+{
+  "name": "ciclo-de-vida",
+  "version": "1.0.0",
+  "description": "Primera practica",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FCA-EG-CO/aplicaciones-de-escritorio-simples-abrahambarrer.git"
+  },
+  "author": "abrah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FCA-EG-CO/aplicaciones-de-escritorio-simples-abrahambarrer/issues"
+  },
+  "homepage": "https://github.com/FCA-EG-CO/aplicaciones-de-escritorio-simples-abrahambarrer#readme",
+  "devDependencies": {
+    "electron": "^36.1.0"
+  }
+}

@@ -8,10 +8,11 @@ function createWindow () {
     }
   })
 
-  ipcMain.on('set-title', (event, title) => {
+  ipcMain.on('send-message', (event, message) => {
     const webContents = event.sender
     const win = BrowserWindow.fromWebContents(webContents)
-    win.setTitle(title)
+    win.setTitle(message)
+    console.log(`Mensaje: ${message}`)
   })
 
   mainWindow.loadFile('index.html')
